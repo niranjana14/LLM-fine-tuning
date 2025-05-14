@@ -10,7 +10,7 @@ st.title("Fine Tuning BERT for Twitter Tweets for Multi Class Sentiment Classifi
 
 classifier = pipeline('text-classification', model= 'bert-base-uncased-sentiment-model')
 
-text = st.text_area("Enter some text")
+text = st.text_area("Enter your tweet")
 
 if st.button("Predict"):
     result = classifier(text)
